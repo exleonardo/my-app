@@ -3,9 +3,7 @@ import "./App.css";
 const App = () => {
 	return (
 		<div>
-			<div>
-				<Header />
-			</div>
+			<Header />
 			<div className="App">
 				<ul>
 					<li>Name</li>
