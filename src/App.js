@@ -21,10 +21,10 @@ const App = () => {
 export const Header = () => {
 	return (
 		<div>
-			<a> LOL</a>
-			<a> html</a>
-			<a> js</a>
-			<a> React</a>
+			<a href="#S"> LOL</a>
+			<a href="#S"> html</a>
+			<a href="#S"> js</a>
+			<a href="#S"> React</a>
 		</div>
 	);
 };
