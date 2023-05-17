@@ -4,8 +4,8 @@
 	grid-template-columns: 2fr 10fr;
 	gap: 10px;
 	grid-template-areas:
-		"h h h"
-		"n c c";
+		"h h"
+		"n c";
 }
 .header {
 	grid-area: h;
