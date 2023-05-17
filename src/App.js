@@ -4,14 +4,19 @@ const App = () => {
 	return (
 		<div>
 			<Header />
-			<div className="App">
-				<ul>
-					<li>Name</li>
-					<li>html</li>
-					<li>js</li>
-					<li>React</li>
-				</ul>
-			</div>
+			<Technologies />
+		</div>
+	);
+};
+const Technologies = () => {
+	return (
+		<div>
+			<ul>
+				<li>Name</li>
+				<li>html</li>
+				<li>js</li>
+				<li>React</li>
+			</ul>
 		</div>
 	);
 };
