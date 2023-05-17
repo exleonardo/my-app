@@ -9,6 +9,7 @@
 }
 .header {
 	grid-area: h;
+	background-color: hsla(0, 10%, 92%, 0.957);
 }
 .nav {
 	grid-area: n;
