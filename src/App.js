@@ -1,11 +1,10 @@
 import "./App.css";
+import Header from "./components/Header";
 
 const App = () => {
 	return (
 		<div className="app-wrapper">
-			<header className="header">
-				<img src="https://andpro.ru/upload/iblock/984/Apple_logo_black.svg" alt="logo" />
-			</header>
+			<Header />
 			<nav className="nav">
 				<div>
 					<a href="#s">Profile</a>
