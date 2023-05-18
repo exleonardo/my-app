@@ -9,16 +9,3 @@
 	width: 1200px;
 	margin: 0 auto;
 }
-
-.nav {
-	grid-area: n;
-	background-color: hsla(0, 10%, 92%, 0.957);
-}
-.content {
-	grid-area: c;
-	background-color: rgb(163, 170, 174);
-}
-.content img {
-	width: 100%;
-	height: 600px;
-}
