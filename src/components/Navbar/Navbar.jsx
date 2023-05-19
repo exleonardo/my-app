@@ -14,7 +14,7 @@ const Navbar = () => {
 				<Link to="#s">News</Link>
 			</div>
 			<div className={s.item}>
-				<a href="#s">Music</a>
+				<Link to="#s">Music</Link>
 			</div>
 			<div className={s.item}>
 				<a href="#s">Settings</a>
