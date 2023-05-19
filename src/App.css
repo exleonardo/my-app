@@ -9,3 +9,12 @@
 	width: 1200px;
 	margin: 0 auto;
 }
+.app-wrapper-content {
+	grid-area: c;
+	background-color: rgb(163, 170, 174);
+}
+
+.app-wrapper-content img {
+	width: 100%;
+	height: 600px;
+}
