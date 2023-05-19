@@ -17,7 +17,7 @@ const Navbar = () => {
 				<Link to="/music">Music</Link>
 			</div>
 			<div className={s.item}>
-				<a href="#s">Settings</a>
+				<Link to="/setting">Settings</Link>
 			</div>
 		</nav>
 	);
