@@ -1,6 +1,7 @@
 .nav {
 	grid-area: n;
 	background-color: hsla(0, 10%, 92%, 0.957);
+	padding: 20px;
 }
 .item a {
 	color: hsla(12, 93%, 21%, 0.971);
