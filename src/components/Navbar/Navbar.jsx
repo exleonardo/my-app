@@ -11,7 +11,7 @@ const Navbar = () => {
 				<Link to="/dialogs">Messages</Link>
 			</div>
 			<div className={s.item}>
-				<a href="#s">News</a>
+				<Link to="#s">News</Link>
 			</div>
 			<div className={s.item}>
 				<a href="#s">Music</a>
