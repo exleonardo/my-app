@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 
 const Dialogs = (props) => {
 	const DialigItem = (props) => {
+		const id = props.id;
 		return (
 			<div className={s.dialog + ` ` + s.active}>
-				<Link to="/dialogs/1">{props.name}</Link>
+				<Link to={"/dialogs/" + id}>{props.name}</Link>
 			</div>
 		);
 	};
