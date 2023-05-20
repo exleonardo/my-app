@@ -8,7 +8,7 @@ const ProfileInfo = (props) => {
 					alt="logo"
 				></img>
 			</div>
-			<div>ava + desc</div>
+			<div className={s.descriptionBlock}>ava + desc</div>
 		</div>
 	);
 };
