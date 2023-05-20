@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Dialogs = (props) => {
 	const DialigItem = (props) => {
-		const id = props.id;
+		const path = "/dialogs/" + props.id;
 		return (
 			<div className={s.dialog + ` ` + s.active}>
-				<Link to={"/dialogs/" + id}>{props.name}</Link>
+				<Link to={path}>{props.name}</Link>
 			</div>
 		);
 	};
