@@ -8,8 +8,6 @@ const MyPosts = (props) => {
 	const newPostElement = React.createRef();
 	const addPost = () => {
 		props.addPost();
-		newPostElement.current.value = "";
-		props.updateNewPostText(``);
 	};
 	let onPostChange = () => {
 		let text = newPostElement.current.value;
