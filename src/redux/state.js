@@ -5,6 +5,7 @@ let state = {
 			{ id: 1, message: "Hi how are you ", likesCount: 1 },
 			{ id: 2, message: "It's my first post", likesCount: 2 },
 		],
+		newPostText: "it-camasutra.com",
 	},
 	dialogsPage: {
 		messages: [
