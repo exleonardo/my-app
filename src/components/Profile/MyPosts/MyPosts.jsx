@@ -1,9 +1,11 @@
+import React from "react";
 import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
 const MyPosts = (props) => {
 	const postsElements = props.posts.map((p) => (
 		<Post message={p.message} id={p.id} likesCount={p.likesCount} />
 	));
+	const newPostElement = React.createRef();
 	const addPost = () => {
 		return alert(`hey`);
 	};
@@ -12,7 +14,7 @@ const MyPosts = (props) => {
 			<h3>my posts</h3>
 			<div>
 				<div>
-					<textarea></textarea>
+					<textarea ref={newPostElement}></textarea>
 				</div>
 				<div>
 					<button onClick={addPost}>Add Post</button>
