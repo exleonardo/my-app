@@ -29,4 +29,8 @@ export let addPost = (postMessage) => {
 	state.profilePage.posts.push(newPost);
 	rerenderEntireThree(state);
 };
+export let updateNewPostText = (newText) => {
+	state.profilePage.newPostText = newText;
+	rerenderEntireThree(state);
+};
 export default state;
