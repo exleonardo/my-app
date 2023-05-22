@@ -14,5 +14,5 @@ let rerenderEntireThree = (state) => {
 	);
 };
 
-rerenderEntireThree(state);
+rerenderEntireThree(store._state);
 subscribe(rerenderEntireThree);
