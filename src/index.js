@@ -6,7 +6,7 @@ import App from "./App";
 import { addPost, updateNewPostText } from "./redux/state";
 import { subscribe } from "./redux/state";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-let rerenderEntireThree = () => {
+let rerenderEntireThree = (state) => {
 	root.render(
 		<React.StrictMode>
 			<App state={state} addPost={addPost} updateNewPostText={updateNewPostText} />
