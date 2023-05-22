@@ -24,9 +24,9 @@ let store = {
 			],
 		},
 	},
+	rerenderEntireThree() {},
 };
 
-let rerenderEntireThree = () => {};
 let state = {
 	profilePage: {
 		posts: [
