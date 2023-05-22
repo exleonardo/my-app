@@ -15,4 +15,4 @@ let rerenderEntireThree = (state) => {
 };
 
 rerenderEntireThree(store._state);
-subscribe(rerenderEntireThree);
+store.subscribe(rerenderEntireThree);
