@@ -14,5 +14,5 @@ let rerenderEntireThree = (state) => {
 	);
 };
 
-rerenderEntireThree(store._state);
+rerenderEntireThree(store.getState());
 store.subscribe(rerenderEntireThree);

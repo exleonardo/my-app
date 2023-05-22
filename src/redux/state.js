@@ -25,21 +25,21 @@ let store = {
 		},
 	},
 	getState() {
-		return _state;
+		return this._state;
 	},
 	rerenderEntireThree() {},
 	addPost() {
-		let newPost = { id: 5, message: state.profilePage.newPostText, likesCount: 0 };
-		state.profilePage.posts.push(newPost);
-		state.profilePage.newPostText = ``;
-		rerenderEntireThree(state);
+		let newPost = { id: 5, message: this._state.profilePage.newPostText, likesCount: 0 };
+		this._state.profilePage.posts.push(newPost);
+		this._state.profilePage.newPostText = ``;
+		this.rerenderEntireThree(this._state);
 	},
 	updateNewPostText(newText) {
-		state.profilePage.newPostText = newText;
-		rerenderEntireThree(state);
+		this._state.profilePage.newPostText = newText;
+		this.rerenderEntireThree(this._state);
 	},
 	subscribe(observer) {
-		rerenderEntireThree = observer;
+		this.rerenderEntireThree = observer;
 	},
 };
 
