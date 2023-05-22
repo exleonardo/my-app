@@ -1,3 +1,5 @@
+let store = {};
+
 let rerenderEntireThree = () => {};
 let state = {
 	profilePage: {
