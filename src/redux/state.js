@@ -1,5 +1,5 @@
 let store = {
-	state: {
+	_state: {
 		profilePage: {
 			posts: [
 				{ id: 1, message: "Hi how are you ", likesCount: 1 },
