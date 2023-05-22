@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 let rerenderEntireThree = (state) => {
 	root.render(
 		<React.StrictMode>
-			<App state={state} addPost={addPost} updateNewPostText={updateNewPostText} />
+			<App state={store._state} addPost={store.addPost} updateNewPostText={updateNewPostText} />
 		</React.StrictMode>
 	);
 };
