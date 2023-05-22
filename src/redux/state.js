@@ -27,19 +27,19 @@ let store = {
 	getState() {
 		return this._state;
 	},
-	rerenderEntireThree() {},
+	_callSubscriber() {},
 	addPost() {
 		let newPost = { id: 5, message: this._state.profilePage.newPostText, likesCount: 0 };
 		this._state.profilePage.posts.push(newPost);
 		this._state.profilePage.newPostText = ``;
-		this.rerenderEntireThree(this._state);
+		this._callSubscriber(this._state);
 	},
 	updateNewPostText(newText) {
 		this._state.profilePage.newPostText = newText;
-		this.rerenderEntireThree(this._state);
+		this._callSubscriber(this._state);
 	},
 	subscribe(observer) {
-		this.rerenderEntireThree = observer;
+		this._callSubscriber = observer;
 	},
 };
 
