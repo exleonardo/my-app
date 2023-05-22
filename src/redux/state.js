@@ -24,6 +24,9 @@ let store = {
 			],
 		},
 	},
+	getState() {
+		return _state;
+	},
 	rerenderEntireThree() {},
 	addPost() {
 		let newPost = { id: 5, message: state.profilePage.newPostText, likesCount: 0 };
