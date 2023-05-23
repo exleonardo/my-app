@@ -43,10 +43,7 @@ let store = {
 	},
 	dispatch(action) {
 		if (action.type === "ADD-POST") {
-			let newPost = { id: 5, message: this._state.profilePage.newPostText, likesCount: 0 };
-			this._state.profilePage.posts.push(newPost);
-			this._state.profilePage.newPostText = ``;
-			this._callSubscriber(this._state);
+			this._addPost();
 		} else if (action.type === "UPDATE-NEW-POST-TEXT") {
 			this._state.profilePage.newPostText = action.newText;
 			this._callSubscriber(this._state);
