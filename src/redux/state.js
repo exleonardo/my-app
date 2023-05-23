@@ -45,7 +45,7 @@ let store = {
 		if (action.type === "ADD-POST") {
 			this._addPost();
 		} else if (action.type === "UPDATE-NEW-POST-TEXT") {
-			this._updateNewPostText();
+			this._updateNewPostText(action.newText);
 		}
 	},
 };
