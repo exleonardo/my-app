@@ -45,8 +45,7 @@ let store = {
 		if (action.type === "ADD-POST") {
 			this._addPost();
 		} else if (action.type === "UPDATE-NEW-POST-TEXT") {
-			this._state.profilePage.newPostText = action.newText;
-			this._callSubscriber(this._state);
+			this._updateNewPostText();
 		}
 	},
 };
