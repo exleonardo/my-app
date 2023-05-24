@@ -43,10 +43,10 @@ let store = {
 		}
 	},
 };
-export let addPostActionCreatter = () => {
+export const addPostActionCreatter = () => {
 	return { type: "ADD-POST" };
 };
-export let updateNewPostTextActionCreator = (text) => {
+export const updateNewPostTextActionCreator = (text) => {
 	return { type: "UPDATE-NEW-POST-TEXT", newText: text };
 };
 
