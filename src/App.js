@@ -6,7 +6,6 @@ import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
 
 const App = (props) => {
-	debugger;
 	return (
 		<BrowserRouter>
 			<div className="app-wrapper">
