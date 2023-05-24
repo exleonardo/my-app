@@ -7,7 +7,7 @@ const Dialogs = (props) => {
 	const dialogsElements = props.state.dialogs.map((d) => <DialogItem name={d.name} id={d.id} />);
 	const messagesElements = props.state.messages.map((m) => <Message message={m.message} id={m.id} />);
 	const newPostElement = React.createRef();
-	const newMessageBody = props.state.newMessageBody.map((m) => <Message message={m.message} />);
+	const newMessageBody = props.state.newMessageBody;
 	const onSendMessageClick = () => {};
 	return (
 		<div className={s.dialogs}>
