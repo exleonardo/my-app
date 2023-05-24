@@ -5,7 +5,7 @@ import Post from "./Post/Post";
 export let addPostActionCreatter = () => {
 	return { type: "ADD-POST" };
 };
-let updateNewPostTextActionCreator = (text) => {
+export let updateNewPostTextActionCreator = (text) => {
 	return { type: "UPDATE-NEW-POST-TEXT", newText: text };
 };
 const MyPosts = (props) => {
