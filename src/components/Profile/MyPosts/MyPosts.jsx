@@ -17,7 +17,6 @@ const MyPosts = (props) => {
 		let action = updateNewPostTextActionCreator(text);
 		props.dispatch(action);
 	};
-
 	return (
 		<div className={s.postsBlock}>
 			<h3>my posts</h3>
