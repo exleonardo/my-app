@@ -1,7 +1,9 @@
+import { profileReducer } from "./profile-reducer";
+
 const UPDATE_NEW_MESSAGE_BODY = "UPDATE-NEW-MESSAGE-BODY";
 const SEND_MESSAGE = "SEND-MESSAGE";
 
-export const dialogsReducer = (state, action) => {
+const dialogsReducer = (state, action) => {
 	if (action.type === UPDATE_NEW_MESSAGE_BODY) {
 		this._state.dialogsPage.newMessageBody = action.body;
 	} else if (action.type === SEND_MESSAGE) {
@@ -11,3 +13,5 @@ export const dialogsReducer = (state, action) => {
 	}
 	return state;
 };
+
+export default dialogsReducer;
