@@ -8,7 +8,6 @@ const profileReducer = (state, action) => {
 		state.newPostText = ``;
 	} else if (action.type === UPDATE_NEW_POST_TEXT) {
 		state.newPostText = action.newText;
-		state._callSubscriber(this._state);
 	}
 
 	return state;
