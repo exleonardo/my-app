@@ -6,10 +6,9 @@ const profileReducer = (state, action) => {
 		let newPost = { id: 5, message: this._state.profilePage.newPostText, likesCount: 0 };
 		state.posts.push(newPost);
 		state.newPostText = ``;
-		this._callSubscriber(this._state);
 	} else if (action.type === UPDATE_NEW_POST_TEXT) {
-		this._state.profilePage.newPostText = action.newText;
-		this._callSubscriber(this._state);
+		state.newPostText = action.newText;
+		state._callSubscriber(this._state);
 	}
 
 	return state;
