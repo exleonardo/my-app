@@ -50,13 +50,14 @@ let store = {
 			this._state.dialogsPage.newMessageBody = action.body;
 			this._callSubscriber(this._state);
 		} else if (action.type === SEND_MESSAGE) {
-			let body = (this._state.dialogsPage.newMessageBody = action.body);
+			let body = this._state.dialogsPage.newMessageBody;
 			this._state.dialogsPage.newMessageBody = ``;
 			this._state.dialogsPage.messages.push({ id: 6, message: body });
 			this._callSubscriber(this._state);
 		}
 	},
 };
+
 export const addPostActionCreatter = () => ({ type: ADD_POST });
 export const updateNewPostTextActionCreator = (text) => ({ type: UPDATE_NEW_POST_TEXT, newText: text });
 
