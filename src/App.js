@@ -4,7 +4,7 @@ import Dialogs from "./components/Dialogs/Dialogs";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
-import store from "./redux/store";
+import store from "./redux/redux-store";
 
 const App = (props) => {
 	return (
@@ -12,14 +12,13 @@ const App = (props) => {
 			<div className="app-wrapper">
 				<Header />
 				<Navbar />
-
 				<div className="app-wrapper-content">
 					<Routes>
 						<Route
 							path="/profile/*"
-							element={<Profile profilePage={props.state.profilePage} dispatch={props.dispatch} />}
+							element={<Profile profilePage={props.state.profileReducer} dispatch={props.dispatch} />}
 						/>
-						<Route path="/dialogs/*" element={<Dialogs store={props.store} />} />
+						<Route path="/dialogs/*" element={<Dialogs store={props.store} state={props.state} />} />
 						{/* <Route path="/news/*" element={<Dialogs />} />
 						<Route path="/music/*" element={<Dialogs />} />
 						<Route path="/setting/*" element={<Dialogs />} /> */}
