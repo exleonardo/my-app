@@ -6,7 +6,6 @@ import store from "./redux/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 let rerenderEntireThree = (state) => {
-	debugger;
 	root.render(
 		<React.StrictMode>
 			<App dispatch={store.dispatch.bind(store)} state={state} store={store} />
