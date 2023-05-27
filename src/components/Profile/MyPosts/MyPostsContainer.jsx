@@ -3,7 +3,6 @@ import { addPostActionCreatter, updateNewPostTextActionCreator } from "../../../
 import MyPosts from "./MyPosts";
 
 const MyPostsContainer = (props) => {
-	debugger;
 	let state = props.store.getState();
 
 	const addPost = () => {
