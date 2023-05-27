@@ -10,14 +10,13 @@ const MyPostsContainer = (props) => {
 	));
 	const newPostElement = React.createRef();
 	const addPost = () => {
-		debugger;
 		props.dispatch(addPostActionCreatter());
 	};
-	let onPostChange = () => {
+	let onPostChange = (text) => {
 		let text = newPostElement.current.value;
 		let action = updateNewPostTextActionCreator(text);
 		props.dispatch(action);
 	};
-	return <MyPosts />;
+	return <MyPosts updateNewPostText={onPostChange} />;
 };
 export default MyPostsContainer;
