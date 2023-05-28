@@ -10,7 +10,6 @@ let rerenderEntireThree = (state) => {
 	root.render(
 		<React.StrictMode>
 			<StoreContext.Provider value={store}>
-				{/* dispatch={store.dispatch.bind(store)} state={state} store={store} */}
 				<App />
 			</StoreContext.Provider>
 		</React.StrictMode>
