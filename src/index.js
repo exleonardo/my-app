@@ -5,19 +5,16 @@ import App from "./App";
 import store from "./redux/store";
 
 import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 let rerenderEntireThree = () => {
 	root.render(
-		<React.StrictMode>
+		<BrowserRouter>
 			<Provider store={store}>
 				<App />
 			</Provider>
-		</React.StrictMode>
+		</BrowserRouter>
 	);
 };
-rerenderEntireThree(store.getState());
-store.subscribe(() => {
-	let state = store.getState();
-	rerenderEntireThree(state);
-});
+rerenderEntireThree();
