@@ -21,17 +21,9 @@ const profileReducer = (state = initialState, action) => {
 		case UPDATE_NEW_POST_TEXT:
 			state.newPostText = action.newText;
 			return state;
+		default:
+			return state;
 	}
-	if (action.type === ADD_POST) {
-		let newPost = { id: 5, message: state.newPostText, likesCount: 0 };
-		let stateCopy = { ...state };
-		stateCopy.posts = [...state.posts];
-		stateCopy.posts.push(newPost);
-		stateCopy.newPostText = ``;
-	} else if (action.type === UPDATE_NEW_POST_TEXT) {
-		state.newPostText = action.newText;
-	}
-	return state;
 };
 
 export const addPostActionCreatter = () => ({ type: ADD_POST });
