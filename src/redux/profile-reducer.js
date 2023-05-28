@@ -17,6 +17,8 @@ const profileReducer = (state = initialState, action) => {
 			stateCopy.posts = [...state.posts];
 			stateCopy.posts.push(newPost);
 			stateCopy.newPostText = ``;
+			return stateCopy;
+		case UPDATE_NEW_POST_TEXT:
 	}
 	if (action.type === ADD_POST) {
 		let newPost = { id: 5, message: state.newPostText, likesCount: 0 };
