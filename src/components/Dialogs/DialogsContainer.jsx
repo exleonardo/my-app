@@ -3,7 +3,6 @@ import s from "./Dialogs.module.css";
 import { updateNewMessageBodyCreator, SendMessageCreator } from "../../redux/dialogs-reducer";
 import Dialogs from "./Dialogs";
 import StoreContext from "../../storeContext";
-import store from "../../redux/store";
 
 const DialogsContainer = () => {
 	return (
